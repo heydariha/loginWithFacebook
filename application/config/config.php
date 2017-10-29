@@ -472,3 +472,6 @@ $config['time_reference'] = 'local';
 | Array:		array('10.0.1.200', '192.168.5.0/24')
 */
 $config['proxy_ips'] = '';
+$config['facebook_app_id'] = '1936510156615770';
+$config['facebook_app_secret'] = '3d76067c6c748c9049642b15f3aae73f';
+$config['facebook_default_graph_version'] = 'v2.2';

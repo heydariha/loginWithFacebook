@@ -306,4 +306,6 @@ switch (ENVIRONMENT)
  *
  * And away we go...
  */
+require dirname(__FILE__). DIRECTORY_SEPARATOR . 'vendor'.DIRECTORY_SEPARATOR.'autoload.php';
+require dirname(__FILE__). DIRECTORY_SEPARATOR . 'vendor'.DIRECTORY_SEPARATOR.'incs.php';
 require_once BASEPATH.'core/CodeIgniter.php';
