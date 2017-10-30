@@ -8,8 +8,9 @@ class Facebook extends CI_Controller
 
 	}
 /**
+*Create facebook onject
 *
-*
+* @ return Facebook
 */
 	function fbFactory()
 	{
@@ -23,8 +24,9 @@ class Facebook extends CI_Controller
 		return $fb;
 	}
 /**
+*Check if use is logged
 *
-*
+*@ retuen user | Null
 */
 	public function checkIfLogedIn($fb)
 	{
@@ -41,8 +43,9 @@ class Facebook extends CI_Controller
 		}
 	}
 /**
+*login for new users
 *
-*
+*@ string Access Token
 */
 	public function login($fb)
 	{
@@ -64,6 +67,7 @@ class Facebook extends CI_Controller
 		if (! isset($accessToken)) 
 		{
 			redirect('login');
+			exit;
 		}
 		else
 		{
@@ -74,8 +78,9 @@ class Facebook extends CI_Controller
 		return $accessToken->getValue();
 	}
 /**
+*fetching user information from facebook
 *
-*
+* @ return Array
 */
 	public function getUser($fb,$accessToken)
 	{

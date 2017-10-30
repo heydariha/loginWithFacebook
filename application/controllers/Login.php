@@ -4,6 +4,11 @@ use Facebook\FacebookSession;
 
 class Login extends CI_Controller 
 {
+/*
+*
+* Show user information for logged users or redirect for login with facebook
+*
+*/
 	public function index()
 	{
 		$fb		= $this->facebook->fbFactory();
@@ -22,7 +27,12 @@ class Login extends CI_Controller
 			$this->load->view('login/loginv',$data);
 		}
 	}
-
+/*
+*
+* OAuth call back function
+* login process and saving in to database
+*
+*/
 	public function callback()
 	{
 		$fb	= $this->facebook->fbFactory();
