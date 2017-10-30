@@ -15,7 +15,7 @@ class User extends CI_Model {
 #___________________________________________________	
 	function putUser(array $array)
 	{
-		$query	= "REPLACE INTO users (fb_id,fb_name,fb_profile_pic,fb_is_active) VALUES ( '{$array['fb_id']}' , '{$array['fb_name']}' , '{$array['fb_profile_pic']}' , '{$array['fb_is_active']} ')";
+		$query	= "REPLACE INTO users (fb_id,fb_name,fb_profile_pic,fb_is_active,fb_token) VALUES ( '{$array['fb_id']}' , '{$array['fb_name']}' , '{$array['fb_profile_pic']}' , '{$array['fb_is_active']} ' , '{$array['fb_token']} ')";
 		$this->db->query($query);
 		$result	= $this->db->error();
 

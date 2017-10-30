@@ -20,7 +20,6 @@ class PAGE extends CI_Controller{
         global $confArray;
         $HEAD = "<!DOCTYPE html>
         <head>
-            <link rel='shortcut icon' href='{$this->icon}' type='image/ico'/>
 			<title> {$this->title} </title>
 			<meta name='keywords' content='{$this->keyWord}'>
 			{$this->acse}

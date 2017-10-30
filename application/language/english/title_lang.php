@@ -1,3 +1,3 @@
 <?php 
 
-$lang['tit_view'] = "view";
+$lang['title_view'] = "view"; 
